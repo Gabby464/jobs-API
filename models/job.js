@@ -13,7 +13,7 @@ const jobSchema = new mongoose.Schema({
                 "NYC, USA",
                 "Paris, France",
                 "London, UK",
-                "Plovdiv, Sofia",
+                "Plovdiv, Bulgaria",
                 "Madrid, Spain",
             ],
             message: "{VALUE} is not a known location",
