@@ -17,6 +17,9 @@ The Jobs API is a RESTful API built using NODE JS and Express.js. Its purpose is
 
 Feel free to contribute to the project by adding new features, improving existing functionality, or fixing any bugs you may come across.
 
+The API is currently hosted on: *[Render](https://jobster-4rrx.onrender.com)*
+
+
 ## Endpoints
 
 The Jobs API provides the following endpoints:
