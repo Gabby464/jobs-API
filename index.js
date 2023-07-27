@@ -24,6 +24,7 @@ app.get("/", (req, res) => {
     res.send("it's working");
 });
 
+app.use(cors());
 app.use("/jobs-api/v1/jobs", jobsRouter);
 app.use("/jobs-api/v1/auth", authRouter);
 
@@ -35,10 +36,10 @@ const limiter = rateLimit({
 });
 app.use(notFoundMiddleware);
 app.use(errorMiddleware);
-app.use(cors());
 app.use(helmet());
 app.use(limiter);
-app.set('trust proxy', 1)
+app.set("trust proxy", 1);
+
 const port = process.env.PORT || 3000;
 
 const start = async () => {
